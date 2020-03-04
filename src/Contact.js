@@ -3,16 +3,7 @@ import GlowingButton from './GlowingButton'
 
 export default class Contact extends Component {
 
-    state = {
-        isGlow:false
-    };
-
-    toggleBox = () => {
-        this.setState(prevState => ({ isGlow: !prevState.isGlow }));
-    };
-
     render() {
-        const { isGlow } = this.state;
         return (
             <div className="contact">
                 <div className="contact-text">Email: anilsenay3@gmail.com</div>
