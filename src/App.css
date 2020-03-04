@@ -107,6 +107,7 @@ a{
 .buttons{
   margin-right: 30px;
   margin-bottom: 60px;
+  outline : none;
 }
 
 .contact-text-bigger{
