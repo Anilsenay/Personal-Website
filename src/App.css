@@ -20,6 +20,9 @@ body{
   margin-right: 30px;
   text-decoration: none;
 }
+.header-links:hover{
+  color: #17b06b;
+}
 
 h1{
   color: #e4e2ff;
