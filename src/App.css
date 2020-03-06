@@ -109,7 +109,7 @@ a{
 
 .buttons{
   margin-right: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   outline : none;
 }
 
@@ -124,7 +124,23 @@ a{
   margin-bottom: 20px;
 }
 
-.test{
+.twitter-text{
+  color : #1da1f2;
+  background:#111;
+  text-shadow:1px 1px 10px #1da1f2, 1px 1px 10px rgb(204, 204, 204);
+}
+.instagram-text{
+  color : #c13584;
+  background:#111;
+  text-shadow:1px 1px 10px #c13584, 1px 1px 10px rgb(204, 204, 204);
+}
+.github-text{
+  color : #17b06b;
   background:#111;
   text-shadow:1px 1px 10px #17b06b, 1px 1px 10px rgb(204, 204, 204);
+}
+.linkedin-text{
+  color : #2867b2;
+  background:#111;
+  text-shadow:1px 1px 10px #2867b2, 1px 1px 10px rgb(204, 204, 204);
 }

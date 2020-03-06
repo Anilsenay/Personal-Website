@@ -17,13 +17,12 @@ export default class GlowingButton extends Component {
     render() {
         const { isGlow } = this.state;
 
-        console.log(this.state['twitter']);
         return (
-            <div className={`buttons-display ${isGlow ? "test": ""}`}
+            <div className={"buttons-display"}
                 onMouseEnter={() => {this.toggleBox()}}
                 onMouseLeave={() => {this.toggleBox()}}>
                 <a href={this.state[this.props.social]} className="buttons">
-                    <div className="box" ><i className={`fab fa-${this.props.social} icon-margin`} aria-hidden="true"/>
+                    <div className={`box ${isGlow ? `${this.props.social}-text`: ""}`}><i className={`fab fa-${this.props.social} icon-margin`} aria-hidden="true"/>
                         <span>{this.props.text}</span>
                     </div>
                 </a>

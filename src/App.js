@@ -1,22 +1,16 @@
 import React from 'react';
-import './App.css';
-import Title from './Title';
-import Whoami from './Whoami';
-import Contact from './Contact';
-import Header from './Header';
+import Home from './components/Home';
+import Projects from './components/Projects'
+
+import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <div className="container">
-        <Title/>
-        <hr/>
-        <Whoami/>
-        <hr/>
-        <Contact/>
-        <hr/>
-      </div>
+    <div>
+      <BrowserRouter>
+        <Route exact path='/' component={Home}/>
+        <Route path='/projects' component={Projects}/>
+      </BrowserRouter>
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default class Header extends Component {
         return (
             <div className="header">
                 <a href="/" className="header-links">/home</a>
-                <a href="/" className="header-links">/projects</a>
+                <a href="/projects" className="header-links">/projects</a>
           </div>
         )
     }
