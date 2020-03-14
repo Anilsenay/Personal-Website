@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
 
 export default class Whoami extends Component {
+
+    intervalID = 0;
     
     componentDidMount(){
-        setInterval(() => {
+        this.intervalID = setInterval(() => {
             (document.querySelector('.i').style.backgroundColor === "rgb(64, 62, 66)") ? (document.querySelector('.i').style = '') : (document.querySelector('.i').style = 'background-color: #403e42');
         }, 500);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.intervalID)
     }
 
     render() {

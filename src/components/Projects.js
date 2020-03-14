@@ -15,6 +15,7 @@ export default class Projects extends Component {
                 <h3>Projelerim</h3>
                 <hr/>
                 <Project
+                  id="project1"
                   projectName="Change My Mind"
                   info="> Android ile uğraştığım bir uygulama. Bir süreliğine ara verdim. Son halini Github'da bulabilirsiniz."
                   link="https://github.com/Anilsenay/Change_My_Mind"
@@ -22,6 +23,7 @@ export default class Projects extends Component {
                 />
                 <hr/>
                 <Project
+                id="project2"
                 projectName="Mushroom Meshwork"
                 info=" > Bu aslında bize derste verilen bir proje. Fakat içine sevgimi de kattığım bir iş oldu. Sadece not alıp geçmek için yapılan bir proje olarak görmedim. Daha fazlasıydı. "
                 link="https://github.com/Anilsenay/School-Game-Project"

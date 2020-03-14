@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Header from './Header';
 
 function Home() {
+
   return (
     <div className="App">
       <Header/>
