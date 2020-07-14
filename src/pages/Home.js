@@ -1,9 +1,9 @@
 import React from 'react';
 import '../App.css';
-import Title from './Title';
-import Whoami from './Whoami';
-import Contact from './Contact';
-import Header from './Header';
+import Title from '../components/Title';
+import Whoami from '../components/Whoami';
+import Contact from '../components/Contact';
+import Header from '../components/Header';
 
 function Home() {
 
