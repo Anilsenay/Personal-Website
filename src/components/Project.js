@@ -26,6 +26,7 @@ export default function Project(props) {
             <div className="progress">
                 <div className="progress-bar progress-bar-striped progress-bar-animated progress-bar-color" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{width: `${props.progress}`}}></div>
             </div>
+            <hr/>
         </div>
     )
 }

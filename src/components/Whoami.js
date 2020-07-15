@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import '../App.css'
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 export default class Whoami extends Component {
 
@@ -16,15 +18,14 @@ export default class Whoami extends Component {
 
     render() {
 
+        const hacker = "Hacking ifadesi gibi değişken bir ifade için basit bir tanım yapmak zordur; ama birçok hacker'ın ortak özelliği oyuncu, zeki ve keşifçi olmalarıdır. Bu nedenle hacking, oyuncu bir zeka ruhunda mümkün olanın sınırlarını keşfetmek anlamına gelmektedir. Oyuncu zeka gösteren etkinlikler hack değerine sahiptir.\n\n – Richard Stallman, “Hacking Hakkında”"
+
         const paragraphs_tr = [
             <p>Selam ben Anıl. Marmara Üniversitesi'nde Bilgisayar Mühendisliği okuyorum. Çocukluğumdan beri bilgisayarla ilgileniyorum. Bir merak, tutku ile başladığım kodlama ve tasarım artık hayatımın büyük bir parçası olmuş durumda. </p>,
-            <p>Kendimi <a href="https://frpnet.net/makaleler/geek-nedir">Geek</a> olarak tanımlayabilirim. Bilgisayar oyunları, sinema, çizgi roman, bilim kurgu ve fantastik kitaplar günlük hayatımda bolca tükettiğim ve vakit ayırdığım ilgi alanlarım. </p>
+            <p>Kendimi <RoughNotation type="box" show={true} color="green"><a href="https://frpnet.net/makaleler/geek-nedir">Geek</a></RoughNotation> olarak tanımlayabilirim. Bilgisayar oyunları, sinema, çizgi roman, bilim kurgu ve fantastik kitaplar günlük hayatımda bolca tükettiğim ve vakit ayırdığım ilgi alanlarım. </p>,
+            <p>Yazılım dünyasına girişim ise web tasarım ile başladı. O zamanlar(~2012) henüz Html5 bile yoktu ve Frontpage kullanılıyordu. Birkaç yıl web tasarım ile ilgilendikten sonra uzun bir süre web tarafında bir geliştirme yapmadım. Şu sıralar tekrardan frontend ile ilgileniyorum. <RoughNotation type="underline" strokeWidth={2} show={true} color="green">React</RoughNotation> ile web, <RoughNotation type="underline" strokeWidth={2} show={true} color="green">React Native</RoughNotation> ile mobil uygulama geliştiriyorum. Kod yazmak dışında Figma ve XD ile UI tasarımı da yapıyorum. Bunun dışında küçük yaşlardan beridir hack kültürünün içindeyim ve kendimi <span className="tool" data-tip={hacker} data-html="true" >hacker</span>(cracker değil) olarak da tanımlayabilirim. Bu hack kültüründen gelen aktivist bir tutum olarak da özgür yazılım savucusuyum ve mümkün olduğunca özgür yazılımları kullanmayı tercih ediyorum.</p>
         ]
 
-        const paragraphs_en = [
-            <p>Hi, I am Anıl. I am studying Computer Engineering at Marmara University. I've been interested in computers since I was a kid. I started coding and designing with a curiosity, passion then they became a big part of my life. </p>,
-            <p>I could call myself a <a href="https://www.dictionary.com/e/dork-dweeb-nerd-geek-oh/">Geek</a>. Computer games, cinema, comics, science fiction and fantasy books are my interests which I have consumed and spent time in my daily life. </p>
-        ]
 
         return (
             <div className="whoami">
@@ -33,6 +34,7 @@ export default class Whoami extends Component {
                 </div>
                 {paragraphs_tr[0]}
                 {paragraphs_tr[1]}
+                {paragraphs_tr[2]}
             </div>
         )
     }
