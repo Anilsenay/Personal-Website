@@ -4,11 +4,12 @@ import Title from '../components/Title'
 import '../App.css';
 import Project from '../components/Project'
 
-import {projects} from '../projects.json';
+import ProjectsFromJson from '../projects';
 
 export default function Projects() {
 
   const [repos, setRepos] = useState([])
+  const projects = ProjectsFromJson();
 
   useEffect(() => {
     repos.length === 0 &&
@@ -21,7 +22,7 @@ export default function Projects() {
         if(projects.some(e => e.name === item.name))
           return item
     }))
-  }, [repos])
+  }, [projects, repos])
 
   return (
     <div className="App">
@@ -38,6 +39,7 @@ export default function Projects() {
             return (
               <Project
                 id={"project" + item.id.toString()}
+                key={item.id}
                 projectName={item.name}
                 info={`> ${item.description}`}
                 link={item.html_url}
