@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css'
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";
 
 export default class Whoami extends Component {
 

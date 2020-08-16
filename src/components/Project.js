@@ -1,9 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 
 export default function Project(props) {
 
-    //const [projectName, setProjectName] = useState(0);
-    // const [info, setInfo] = useState("");
     const projectName = props.projectName + "";
     const project_name = [projectName.substring(0, projectName.length-1), projectName[projectName.length-1] ]
     let intervalID = props.id
