@@ -1,5 +1,7 @@
 {
     "projects": [
+        {"name": "nextjs-instagram-clone", "progress": 99},
+        {"name": "gatsby-personal-blog", "progress": 99},
         {"name": "React-Native-Shopping-App", "progress": 100},
         {"name": "React-Native-Translate", "progress": 100},
         {"name": "ReactJS-IMDB-Clone", "progress": 95},
